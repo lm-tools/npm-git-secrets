@@ -1,0 +1,19 @@
+{
+  "name": "npm-git-secrets",
+  "version": "1.0.0",
+  "description": "installs and configures git secrets",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "git secrets --install -f && git secrets --register-aws || (echo 'ERROR: preinstall failed! git secrets may not be configured correctly. Check the README.md for install and config instructions' && exit 1)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lm-tools/npm-git-secrets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lm-tools/npm-git-secrets/issues"
+  },
+  "homepage": "https://github.com/lm-tools/npm-git-secrets#readme"
+}
