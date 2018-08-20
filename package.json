@@ -1,6 +1,6 @@
 {
   "name": "npm-git-secrets",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "installs and configures git secrets",
   "main": "index.js",
   "scripts": {
