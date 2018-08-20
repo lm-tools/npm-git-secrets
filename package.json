@@ -4,7 +4,7 @@
   "description": "installs and configures git secrets",
   "main": "index.js",
   "scripts": {
-    "preinstall": "git secrets --install -f && git secrets --register-aws || (echo -e 'ERROR: preinstall failed! git secrets may not be configured correctly. Ensure node_modules/.bin is on your path' && exit 1)"
+    "postinstall": "PATH=$PATH:node_modules/.bin && git secrets --install -f && git secrets --register-aws || (echo -e 'ERROR: preinstall failed! git secrets may not be configured correctly.' && exit 1)"
   },
   "repository": {
     "type": "git",
